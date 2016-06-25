@@ -3,7 +3,7 @@ project(uabench CXX)
 include(ExternalProject)
 set (
   CMAKE_CXX_FLAGS
-  "${CMAKE_CXX_FLAGS} -pthread"
+  "${CMAKE_CXX_FLAGS} -pthread -Wall -Werror"
 )
 
 # Set default build type.
