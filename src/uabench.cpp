@@ -118,7 +118,7 @@ int main(int argc, char *argv[]) {
         cout << "Worker " << i << " needed " << results.at(i).time/1000 << "s for " << countPerThread << " requests" << endl;
         result += (countPerThread/(results.at(i).time/1000));
     }
-    result /= numberOfThreads; //averaging
+    //result /= numberOfThreads; //averaging
 
     cout << "Average performance " << result << " req/s" << endl;
 
